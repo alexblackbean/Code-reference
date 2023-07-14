@@ -1,7 +1,7 @@
 '''
 author: Kuo Yu Liao
 email: alexgreenbean6092@gmail.com
-code content: Command line argument parser fo python
+code content: example for catching exception (python)
 '''
 class MyClass():
     def __init__(self)->None:
