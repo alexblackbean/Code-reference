@@ -1,6 +1,14 @@
+'''
+author: Kuo Yu Liao
+email: alexgreenbean6092@gmail.com
+code content: Command line argument parser for python
+'''
 import argparse
 
 class MyParser:
+    ''' You can modify constructor to specify the argument you use
+        get_args will return the parser args
+    '''
     def __init__(self)->None:
         self.parser = argparse.ArgumentParser()
         self.parser.add_argument('-c', '--content', help = "type something")
