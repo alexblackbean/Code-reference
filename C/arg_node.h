@@ -22,5 +22,7 @@ void ARG_update(struct arg_node*);
 void ARG_delete(struct arg_node*);
 /*check node content is available*/
 bool ARG_check(struct arg_node*);
+/*show all datatype that argument node has*/
+void ARG_show(void);
 
 #ifndef
