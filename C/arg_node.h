@@ -5,6 +5,7 @@ code content: Argument Node interface (C)
 */
 #ifndef ARG_NODE
 #define ARG_NODE
+#define STR_MAX_LEN 100
 #include <stdbool.h>
 typedef struct arg_node
 {
@@ -16,13 +17,9 @@ typedef struct arg_node
 
 /*New a node containing various data*/
 struct arg_node* ARG_Init(int, float, char, char*);
-/*Update node content*/
-void ARG_update(struct arg_node*);
 /*release memory that node use*/
 void ARG_delete(struct arg_node*);
-/*check node content is available*/
-bool ARG_check(struct arg_node*);
 /*show all datatype that argument node has*/
-void ARG_show(void);
+void ARG_show(struct arg_node*);
 
 #ifndef
